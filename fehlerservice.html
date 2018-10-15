@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Fehlerservice</title>
+        <link rel="stylesheet" href="fehlerservice.css" />
+        <script language="javascript" type="text/javascript" src="fehlerservice.js"></script>
+        <script>
+            document.getElementById("default").click();
+        </script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="Images\Logo.png" alt="Logo" id="logo_klein"/></a>
+            <!--Tabreiter-->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Meldung schreiben')">Meldung schreiben</button>
+                <button class="tablinks" onclick="openTab(event, 'Übersicht')">Übersicht</button>
+            </div>
+        </header>
+        <main>
+
+            <!--Tab Nr.1-->
+            <div id="Meldung schreiben" class="tabcontent">
+                <h3>Meldung schreiben</h3>
+                <div class="container">
+                    <form action="???">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for"labelName">Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="inputName" name="name" placeholder="Nachname_Vorname">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for"labelID">ID</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="inputID" name="id" placeholder="ID">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for"labelKB">Kurzbeschreibung</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="inputKB" name="kb" placeholder="Kurzbeschreibung">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for"labelText">Fehlermeldung</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="textMeldung" name="Fehlermeldung" placeholder="Ausführliche Beschreibung der Fehlermeldung"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <br />
+                            <input type="submit" value="Absenden">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Tab Nr.2-->
+            <div id="Übersicht" class="tabcontent">
+                <h3>Übersicht</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Kurzbeschreibung</th>
+                            <th>Fehlermeldung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>Klein_Evelyn</td>
+                            <td>Grober Fehler bei der Darstellung</td>
+                            <td>Hier folgt eine ausführliche Beschreibung der Fehlermeldung, da man oft ausführlich erklären muss, was der Fehler ist.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </body>
+</html>
